@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-md py-md-4">
+      
+      <a class="navbar-brand" href="#"><img src="./IMAGES/logo(2).png" height="70px" width="200px"></a>
+    
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mr-5">
+          <li class="nav-item active mr-5">
+            <a class="nav-link" href="#">Start a new group<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item mr-5">
+            <a class="nav-link" data-toggle="modal" href="#myModal">Login</a>
+          </li>
+          <li class="nav-item mr-2">
+            <a class="nav-link" data-toggle="modal" href="#SIGNUPModal">Register</a>
+          </li>
+          <!-- LOGIN MODAL START -->
+          <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <p class="sign" align="center">Log In</p>
+                  <form class="form1" action="/action_page.php">
+                    <input class="email" type="text" align="center" placeholder="Email">
+                    <input class="pass" type="password" align="center" placeholder="Password">
+                    <input type="submit"  class="btn btn-outline-success" value="Login">
+                    <p class="forgot" align="center"><a href="#">Forgot Password?</p>
+                      <div class="orbox">
+                        <div class="orword centered">
+                        OR
+                        </div>
+                        </div>  
+                      
+                        <div class="col">
+                          <a href="#" class="fb btn" style="
+                              background-color: #3B5998;
+                           color: white;">
+                            <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                           </a>
+                           
+                          
+                          <a href="#" class="google btn"  style="
+                          background-color: #dd4b39;
+                       color: white;"><i class="fa fa-google fa-fw">
+                            </i> Login with Google
+                          </a>
+                        </div>
+                      </form>
+                </div>
+                
+              
+                
+              </div>
+            </div>
+          </div>
+          <!-- LOGIN MODAL END -->
+
+          <!-- SIGN UP MODAL START -->
+          <div class="modal fade" id="SIGNUPModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <p class="sign" align="center">Register Here</p>
+                  <form class="form1" action="/action_page1.php">
+                    <input class="name" type="text" align="center" placeholder="Your Name">
+                    <input class="email" type="text" align="center" placeholder="Email">
+                    <input class="pass" type="password" align="center" placeholder="Password">
+                    <input type="submit"  class="btn btn-outline-danger" value="Register">
+                    <p class="forgot" align="center"><a href="#">Forgot Password?</p>
+                      <div class="orbox">
+                        <div class="orword centered">
+                        OR
+                        </div>
+                        </div>  
+                      
+                        <div class="col">
+                          <a href="#" class="fb btn" style="
+                              background-color: #3B5998;
+                           color: white;">
+                            <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                           </a>
+                           
+                          
+                          <a href="#" class="google btn"  style="
+                          background-color: #dd4b39;
+                       color: white;"><i class="fa fa-google fa-fw">
+                            </i> Login with Google
+                          </a>
+                        </div>
+                      </form>
+                </div>
+                
+              
+                
+              </div>
+            </div>
+          </div>
+          
+        </div>
+          
+        </div>
+
+
+            </div>
+
+
+
+          </div>
+      </div>
+      </div>
+      </ul>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- IMAGE SLIDER OR CAROUSAL START      -->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./IMAGES/MEETUP1.png" alt="Los Angeles" width="100%" height="!00%">
+          
+        </div>
+        <div class="carousel-item">
+          <img src="./IMAGES/MEETUP2.jpg" alt="Chicago" width="100%" height="100%;">
+          
+        </div>
+        <div class="carousel-item">
+          <img src="./IMAGES/MEETUP3.jpg" alt="New York" width="100%" height="100%">
+          
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+    <!-- IMG CAROUSAL END -->
+  </header>
+    
+     
+  <footer class="footer-distributed">
+ 
+    <div class="footer-left">
+ 
+    <h3>TECHIVE</h3>
+ 
+    <p class="footer-links">
+    <a href="#">Home</a>
+  ·
+    <a href="#">About Us</a>
+  ·
+    <a href="#">Contact</a>
+    </p>
+ 
+    <p class="footer-company-name">TECHIVE &copy; 2020</p>
+    </div>
+ 
+    <div class="footer-center">
+ 
+   
+ 
+    </div>
+ 
+    <div class="footer-right">
+ 
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:support@company.com">techive@gmail.com</a></p>
+        </div>
+ 
+    <div class="footer-icons">
+ 
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+    <a href="#"><i class="fa fa-github"></i></a>
+ 
+    </div>
+ </div>
+
+ 
+    </footer>
+</body>
+
+</html>
